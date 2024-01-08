@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import BookList from "./BookList";
 import Fantasy from "../books/fantasy.json";
 import CommentArea from "./CommentArea";
@@ -28,4 +28,5 @@ class GridAndComments extends Component {
     );
   }
 }
+
 export default GridAndComments;

@@ -2,11 +2,11 @@ import React from "react";
 import SingleBook from "./SingleBook";
 import { Col } from "react-bootstrap";
 
-const BookList = ({ books }) => {
+const BookList = ({ books, onBookSelect }) => {
   return (
-    <Col md={6}>
+    <Col md={8}>
       {books.map((book) => (
-        <SingleBook key={book.asin} book={book} onBookSelect={this.props.onBookSelect} />
+        <SingleBook key={book.asin} book={book} onBookSelect={onBookSelect} />
       ))}
     </Col>
   );

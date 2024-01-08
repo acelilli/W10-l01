@@ -22,12 +22,12 @@ class SingleBook extends Component {
 
     if (selected) {
       return (
-        <Col sm={12} md={6} lg={3}>
+        <div className="d-inline-block">
           <Card
             key={book.asin}
             style={{
-              height: "800px",
-              width: "270px",
+              height: "500px",
+              width: "250px",
               margin: "auto",
               marginBottom: "1rem",
               border: "2px solid red",
@@ -59,16 +59,16 @@ class SingleBook extends Component {
               </Button>
             </Card.Body>
           </Card>
-        </Col>
+        </div>
       );
     } else {
       return (
-        <Col sm={12} md={6} lg={3}>
+        <div className="d-inline-block">
           <Card
             key={book.asin}
             style={{
               height: "500px",
-              width: "270px",
+              width: "250px",
               margin: "auto",
               marginBottom: "1rem",
               border: "2px solid rgba(0, 0, 0, 0.175)",
@@ -94,7 +94,7 @@ class SingleBook extends Component {
               </Button>
             </Card.Body>
           </Card>
-        </Col>
+        </div>
       );
     }
   }

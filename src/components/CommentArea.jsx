@@ -56,7 +56,7 @@ e error è null */
     const { loading, error, comments } = this.state;
 
     return (
-      <Col md={6}>
+      <Col md={4}>
         <div>
           {error && <p>Error fetching data: {error.message}</p>}
           {/* SE loading è true, viene visualizzato un messaggio di caricamento. 
