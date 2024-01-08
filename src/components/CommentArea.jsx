@@ -17,7 +17,19 @@ e error è null */
   ossia, una volta che il DOM ha caricato i suoi componenti viene fatta la fetch (per questo è ASINCRONA).
   Lo stato viene cambiato su TRUE
   */
-  componentDidMount = async () => {
+  componentDidMount() {
+    this.loadComments();
+  }
+  //Devo scrivere il componentDidUpdate in modo tale che i commenti visualizzati cambino a seconda del libro visualizzato
+  componentDidUpdate(prevProps, prevState) {
+    //si aggiorna dopo la prima fetch
+    console.log("Updated component");
+    if (this.props.bookId !== prevProps.bookId) {
+      this.loadComments();
+    }
+  }
+  //Metto la funzione per caricare i commenti
+  loadComments = async () => {
     const { bookId } = this.props;
 
     if (!bookId) {
@@ -65,7 +77,7 @@ e error è null */
           {loading ? (
             <p>Loading...</p>
           ) : comments.length > 0 ? (
-            <div style={{ height: "200px", marginTop: "1rem", overflowY: "scroll" }}>
+            <div style={{ marginTop: "1rem" }}>
               <ListGroup variant="flush" style={{}}>
                 <CommentList comments={comments} />
               </ListGroup>

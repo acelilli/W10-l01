@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      <MyNav brand="EpiBooks" claim="Week 09 Lesson 04" />
+      <MyNav brand="EpiBooks" claim="Week 10 Lesson 01" />
       <Welcome />
       <Container>
         <GridAndComments />
