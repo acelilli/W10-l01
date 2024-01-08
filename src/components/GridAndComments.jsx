@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import BookList from "./BookList";
 import Fantasy from "../books/fantasy.json";
 import CommentArea from "./CommentArea";

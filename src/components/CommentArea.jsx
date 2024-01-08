@@ -81,7 +81,7 @@ e error è null */
               <ListGroup variant="flush" style={{}}>
                 <CommentList comments={comments} />
               </ListGroup>
-              <AddComment id={this.props.id} />
+              <AddComment id={this.props.id} addComment={this.addComment} />
             </div>
           ) : (
             <p>No comments available</p>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Card, Button } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 
 class SingleBook extends Component {
   state = {

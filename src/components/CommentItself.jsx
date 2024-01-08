@@ -28,9 +28,8 @@ const CommentItself = ({ comment }) => {
 
   return (
     <>
-      <span className="d-block">{comment.author} scrive:</span>
-      <span className="d-block">{renderStars(comment.rate)}</span>
       <span className="fst-italic mt-2 mb-0">"{comment.comment}"</span>
+      <span className="d-block">{renderStars(comment.rate)}</span>
       <Button variant="danger" className="ms-2" onClick={() => deleteComment(comment._id)}>
         Delete
       </Button>
