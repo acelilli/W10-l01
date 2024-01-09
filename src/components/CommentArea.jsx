@@ -61,6 +61,9 @@ e error è null */
       this.setState({ error, loading: false });
     }
   };
+  addNewComment = (newComment) => {
+    this.setState({ comments: [...this.state.comments, newComment] });
+  };
 
   // RENDERIZZIAMO GLI ELEMENTI
   /*  */
@@ -81,7 +84,7 @@ e error è null */
               <ListGroup variant="flush" style={{}}>
                 <CommentList comments={comments} />
               </ListGroup>
-              <AddComment id={this.props.id} addComment={this.addComment} />
+              <AddComment bookId={this.props.bookId} onCommentAdded={this.addNewComment} />
             </div>
           ) : (
             <p>No comments available</p>

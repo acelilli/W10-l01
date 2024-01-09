@@ -28,16 +28,16 @@ function App() {
         }
         content2={
           <ul>
-            <li>Testo col 2</li>
-            <li>Testo col 2</li>
-            <li>Testo col 2</li>
+            <li>Autori</li>
+            <li>Catalogo</li>
+            <li>Case Editrici</li>
           </ul>
         }
         content3={
           <ul>
-            <li>Testo col 3</li>
-            <li>Testo col 3</li>
-            <li>Testo col 3</li>
+            <li>FAQ</li>
+            <li>Blog</li>
+            <li>Work With Us</li>
           </ul>
         }
       />
