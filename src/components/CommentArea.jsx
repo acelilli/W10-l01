@@ -43,7 +43,7 @@ e error è null */
       SE vengono trovati vengono caricati, altrimenti stampa un messaggio di errore */
     }
     try {
-      const response = await fetch(`https://striveschool-api.herokuapp.com/api/comments/${this.props.bookId}`, {
+      const response = await fetch(`https://striveschool-api.herokuapp.com/api/comments/${bookId}`, {
         headers: {
           Authorization:
             "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NThhZWFhYThjOWNlZDAwMTg4MzEwZTYiLCJpYXQiOjE3MDM2MDI4NTgsImV4cCI6MTcwNDgxMjQ1OH0.WhX4yu8trW2PtxM-v_0qgeKErtaSw3T6IRBZjPtmZ84",
